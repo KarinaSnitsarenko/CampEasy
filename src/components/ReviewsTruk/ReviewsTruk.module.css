@@ -1,0 +1,41 @@
+.reviewContainer {
+  display: flex;
+  margin-top: 50px;
+  gap: 40px;
+}
+
+.reviewList {
+  display: flex;
+  flex-direction: column;
+  width: 631px;
+  height: 588px;
+  gap: 44px;
+}
+
+.reviewerTwo {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.reviewerName {
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--badges);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  color: var(--button);
+}
+
+.reviewComment {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+}
