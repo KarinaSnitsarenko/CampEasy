@@ -6,13 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 
 const TruckCard = ({ truck }) => {
   const dispatch = useDispatch();
-  const favourites = useSelector(selectFavourites);
-  const isFavourite =
-    Array.isArray(favourites) && favourites.includes(truck.id);
-
-  const handleToggleFavourite = () => {
-    dispatch(toggleFavourite(truck.id));
-  };
   return (
     <div className={css.item_wrapper}>
       {truck.gallery?.[0]?.thumb && (
@@ -26,6 +19,7 @@ const TruckCard = ({ truck }) => {
       <div className={css.info_wrapper}>
         <div className={css.name_wrapper}>
           <h2 className={css.name_title}>{truck.name}</h2>
+          // створити favourite
           <div className={css.favourite_wrapper}>
             <p>{`€ ${Number(truck.price).toFixed(2)}`}</p>
             <svg

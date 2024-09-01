@@ -3,6 +3,7 @@ import css from "./TruckList.module.css";
 import { useSelector } from "react-redux";
 import { isLoading } from "../../redux/truck/selectors";
 import Loader from "../Loader/Loader";
+import TruckCard from "../TruckCard/TruckCard";
 
 const TruckList = ({ filteredTrucks }) => {
   const loading = useSelector(isLoading);
