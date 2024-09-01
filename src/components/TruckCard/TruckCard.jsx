@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
-import css from "./TruckItem.module.css";
+import css from "./TruckCard.module.css";
 import icons from "../../assets/sprite.svg";
 import Features from "../Features/Features";
 import { useDispatch, useSelector } from "react-redux";
-import { selectFavourites } from "../../redux/favourites/selectors";
-import { toggleFavourite } from "../../redux/favourites/slice";
 
-const TruckItem = ({ truck }) => {
+const TruckCard = ({ truck }) => {
   const dispatch = useDispatch();
   const favourites = useSelector(selectFavourites);
   const isFavourite =
@@ -69,4 +67,4 @@ const TruckItem = ({ truck }) => {
     </div>
   );
 };
-export default TruckItem;
+export default TruckCard;

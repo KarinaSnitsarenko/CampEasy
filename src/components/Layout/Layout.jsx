@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
           <Logo />
           <Navigation />
         </header>
-        <main className={css.main}>{children}</main>
+        <main>{children} </main>
       </Suspense>
     </>
   );
